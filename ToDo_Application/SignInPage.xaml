@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDo_Application.SignInPage">
+
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+        <Image Source="dotnet_bot.png" HeightRequest="200" BackgroundColor="LightGray" />
+        <Entry Placeholder="Email address" Keyboard="Email" />
+        <Entry Placeholder="Password" IsPassword="True" />
+        <Button Text="Sign in" Clicked="OnSignInClicked" BackgroundColor="#A799E6" TextColor="White" />
+        <Button Text="Sign up" Clicked="OnSignUpClicked" BackgroundColor="#D3CDE6" TextColor="Gray" />
+    </VerticalStackLayout>
+</ContentPage>

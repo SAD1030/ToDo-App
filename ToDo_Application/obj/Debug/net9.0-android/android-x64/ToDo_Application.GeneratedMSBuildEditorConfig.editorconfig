@@ -1,0 +1,99 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0-android
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ToDo_Application
+build_property.ProjectDir = C:\Users\samue\Downloads\ToDo_App-main\ToDo_App-main\ToDo_Application\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/AddToDoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.AddToDoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AddToDoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AddToDoPage.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/CompletedPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.CompletedPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CompletedPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CompletedPage.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/EditCompletedPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.EditCompletedPage.xaml
+build_metadata.AdditionalFiles.TargetPath = EditCompletedPage.xaml
+build_metadata.AdditionalFiles.RelativePath = EditCompletedPage.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/EditToDoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.EditToDoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = EditToDoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = EditToDoPage.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/ProfilePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.ProfilePage.xaml
+build_metadata.AdditionalFiles.TargetPath = ProfilePage.xaml
+build_metadata.AdditionalFiles.RelativePath = ProfilePage.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/SignInPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.SignInPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SignInPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SignInPage.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/SignUpPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.SignUpPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SignUpPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SignUpPage.xaml
+
+[C:/Users/samue/Downloads/ToDo_App-main/ToDo_App-main/ToDo_Application/ToDoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ToDo_Application.ToDoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ToDoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ToDoPage.xaml

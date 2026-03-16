@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ToDo_Application.EditToDoPage"
+             Title="Edit Task">
+
+    <VerticalStackLayout Padding="20" Spacing="15">
+        <Border Stroke="LightGray" StrokeThickness="1" Padding="15">
+            <Border.StrokeShape><RoundRectangle CornerRadius="5"/></Border.StrokeShape>
+            <Entry x:Name="TitleEntry" />
+        </Border>
+
+        <Border Stroke="LightGray" StrokeThickness="1" Padding="15">
+            <Border.StrokeShape><RoundRectangle CornerRadius="5"/></Border.StrokeShape>
+            <Editor x:Name="DetailsEditor" HeightRequest="100" />
+        </Border>
+
+        <Button Text="Update" Clicked="OnUpdateClicked" BackgroundColor="#8B78E6" TextColor="White" Margin="0,20,0,0" />
+        <Button Text="Complete" Clicked="OnCompleteClicked" BackgroundColor="#7CE38B" TextColor="White" />
+        <Button Text="Delete" Clicked="OnDeleteClicked" BackgroundColor="#FFA1B5" TextColor="White" />
+    </VerticalStackLayout>
+</ContentPage>
