@@ -5,8 +5,8 @@
 
     <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
         <Image Source="dotnet_bot.png" HeightRequest="200" BackgroundColor="LightGray" />
-        <Entry Placeholder="Email address" Keyboard="Email" />
-        <Entry Placeholder="Password" IsPassword="True" />
+        <Entry x:Name="emailEntry" Placeholder="Email address" Keyboard="Email" />
+        <Entry x:Name="passwordEntry" Placeholder="Password" IsPassword="True" />
         <Button Text="Sign in" Clicked="OnSignInClicked" BackgroundColor="#A799E6" TextColor="White" />
         <Button Text="Sign up" Clicked="OnSignUpClicked" BackgroundColor="#D3CDE6" TextColor="Gray" />
     </VerticalStackLayout>
