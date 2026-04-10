@@ -1,11 +1,15 @@
+using System;
+using System.Net.Http;
 using System.Text.Json;
+using Microsoft.Maui.Controls;
+using Microsoft.Maui.Storage; // Added for Preferences
 
 namespace ToDo_Application;
 
 public partial class SignInPage : ContentPage
 {
     private readonly HttpClient _httpClient = new HttpClient();
-    private string baseUrl = "https://todo-list.dcism.org";
+    private readonly string baseUrl = "https://todo-list.dcism.org";
 
     public SignInPage()
     {
@@ -31,7 +35,6 @@ public partial class SignInPage : ContentPage
             var json = await response.Content.ReadAsStringAsync();
 
             var result = JsonDocument.Parse(json);
-
             int status = result.RootElement.GetProperty("status").GetInt32();
 
             if (status == 200)
@@ -39,8 +42,8 @@ public partial class SignInPage : ContentPage
                 var user = result.RootElement.GetProperty("data");
                 int userId = user.GetProperty("id").GetInt32();
 
-                // OPTIONAL: store userId globally
-                Preferences.Set("user_id", userId);
+                // FIXED: Using "current_user_id" to match your ToDoPage fetch logic perfectly
+                Preferences.Default.Set("current_user_id", userId);
 
                 await DisplayAlert("Success", "Login successful!", "OK");
 
@@ -57,7 +60,7 @@ public partial class SignInPage : ContentPage
         }
         catch (Exception ex)
         {
-            await DisplayAlert("Error", ex.Message, "OK");
+            await DisplayAlert("Error", $"Connection error: {ex.Message}", "OK");
         }
     }
 

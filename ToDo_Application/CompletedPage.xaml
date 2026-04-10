@@ -3,19 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ToDo_Application"
              x:Class="ToDo_Application.CompletedPage"
-             Title="Completed">
+             Title="Completed Tasks">
 
-    <CollectionView ItemsSource="{Binding CompletedTasks}" 
-                    SelectionMode="Single"
-                    SelectionChanged="OnSelectionChanged"
-                    Margin="10">
-        <CollectionView.ItemTemplate>
-            <DataTemplate x:DataType="local:ToDoClass">
-                <Grid ColumnDefinitions="*, Auto" Padding="15">
-                    <Label Grid.Column="0" Text="{Binding item_name}" FontSize="18" TextColor="Gray" VerticalOptions="Center" />
-                    <Button Grid.Column="1" Text="🗑️" BackgroundColor="Transparent" Clicked="OnDeleteClicked" CommandParameter="{Binding .}" />
-                </Grid>
-            </DataTemplate>
-        </CollectionView.ItemTemplate>
-    </CollectionView>
+    <Grid>
+        <CollectionView ItemsSource="{Binding CompletedTasks}" 
+                        SelectionMode="Single"
+                        SelectionChanged="OnSelectionChanged"
+                        Margin="10">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="local:ToDoClass">
+                    
+                    <Grid Padding="15" ColumnDefinitions="*, Auto" RowDefinitions="Auto, Auto">
+                        
+                        <Label Grid.Row="0" Grid.Column="0" Text="{Binding Title}" FontSize="18" TextColor="Black" FontAttributes="Bold" />
+                        
+                        <Label Grid.Row="1" Grid.Column="0" Text="{Binding Details}" FontSize="14" TextColor="DimGray" Margin="0,4,0,0" />
+                        
+                        <Button Grid.Row="0" Grid.RowSpan="2" Grid.Column="1" 
+                                Text="🗑️" 
+                                BackgroundColor="#FF4C4C" 
+                                TextColor="White" 
+                                WidthRequest="45" HeightRequest="45" CornerRadius="8"
+                                CommandParameter="{Binding .}" 
+                                Clicked="OnDeleteClicked" 
+                                VerticalOptions="Center" />
+                    </Grid>
+                    
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </Grid>
 </ContentPage>
