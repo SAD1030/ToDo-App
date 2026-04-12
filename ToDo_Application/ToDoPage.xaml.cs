@@ -1,10 +1,17 @@
+using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Linq;
+using Microsoft.Maui.Controls;
 
 namespace ToDo_Application;
 
 public partial class ToDoPage : ContentPage
 {
+    // FIXED: The 'static' keyword is required here so EditToDoPage can find it!
     public static ObservableCollection<ToDoClass> ToDoList { get; set; } = new ObservableCollection<ToDoClass>();
+
+    private readonly ApiService _apiService = new ApiService();
 
     public ToDoPage()
     {
@@ -29,11 +36,24 @@ public partial class ToDoPage : ContentPage
     }
     
     public ObservableCollection<ToDoClass> IncompleteTasks => 
-        new ObservableCollection<ToDoClass>(ToDoList.Where(x => x.status == "Incomplete"));
+        new ObservableCollection<ToDoClass>(ToDoList.Where(x => x.status == "active" || x.status == "Incomplete"));
     
-    protected override void OnAppearing()
+    protected override async void OnAppearing()
     {
         base.OnAppearing();
+
+        int currentUserId = Preferences.Default.Get("current_user_id", 0); 
+    
+        // Fetch the tasks
+        List<ToDoClass> fetchedTasks = await _apiService.GetTasksAsync(currentUserId, "active");
+        
+
+        ToDoList.Clear();
+        foreach (var task in fetchedTasks)
+        {
+            ToDoList.Add(task);
+        }
+
         OnPropertyChanged(nameof(IncompleteTasks));
     }
 }

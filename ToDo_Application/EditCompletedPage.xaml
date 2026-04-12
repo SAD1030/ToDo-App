@@ -20,9 +20,21 @@
             <Editor x:Name="DetailsEditor" HeightRequest="100" />
         </Border>
 
-        <Button Text="Update" Clicked="OnUpdateClicked" BackgroundColor="#8B78E6" TextColor="White" Margin="0,20,0,0" />
-        <Button Text="Incomplete" Clicked="OnIncompleteClicked" BackgroundColor="#808080" TextColor="White" />
-        <Button Text="Delete" Clicked="OnDeleteClicked" BackgroundColor="#FFA1B5" TextColor="White" />
+        <Button Text="Update" 
+                Clicked="OnUpdateClicked" 
+                BackgroundColor="#8B78E6" 
+                TextColor="White" 
+                Margin="0,20,0,0" />
+                
+        <Button Text="Incomplete" 
+                Clicked="OnRestoreClicked" 
+                BackgroundColor="#808080" 
+                TextColor="White" />
+                
+        <Button Text="Delete" 
+                Clicked="OnDeleteClicked" 
+                BackgroundColor="#FFA1B5" 
+                TextColor="White" />
 
     </VerticalStackLayout>
 </ContentPage>

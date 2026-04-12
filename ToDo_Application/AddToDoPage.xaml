@@ -19,6 +19,15 @@
             <Editor x:Name="DetailsEditor" Placeholder="Details" HeightRequest="150" />
         </Border>
         
-        <Button Text="Save" Clicked="OnSaveButtonClicked" BackgroundColor="#A799E6" TextColor="White"/>
+        <Button Text="Save" 
+                Clicked="OnSaveClicked" 
+                BackgroundColor="#A799E6" 
+                TextColor="White"/>
+                
+        <Button Text="Cancel" 
+                Clicked="OnCancelClicked" 
+                BackgroundColor="#808080" 
+                TextColor="White"/>
+                
     </VerticalStackLayout>
 </ContentPage>
